@@ -1,6 +1,19 @@
 <!doctype html>
 <html class="no-js" lang="en">
+<header>
+  <h1 class="logo">Logo</h1>
+</header>
 
+<nav>
+  <ul>
+    <li class="nav-item"><a href="#" >Home</a></li>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#" >Contact</a></li>
+  </ul>
+  <div class="menu-bar">Menu
+    <span class="hamburger-icon"><i class="fa fa-bars"></i></span>
+  </div>
+</nav>
 <head>
   <meta charset="utf-8">
   <title>Search</title>
@@ -18,31 +31,81 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
 
+<body>
+<h1 style="margin: 25px 0px 10px 10px " > Customers Selection </h1>
   <!-- Search function -->
 
   <!-- Load icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
 
   <!-- The form -->
   <form class="example" action="action_page.php">
-    <input type="text" placeholder="Search.." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>
+<!--    <input type="text" placeholder="Search.." name="search">-->
+<!--    <button type="submit"><i class="fa fa-search"></i></button>-->
 
-    <label for="attributes">Choose attribute:</label>
-    <select name="attributes" id="attributes">
-      <option value="first_name">first_name</option>
-      <option value="last_name">last_name</option>
-      <option value="address">address</option>
-      <option value="phone_number">phone_number</option>
-      <option value="email">email</option>
-      <option value="gender">gender</option>
-    </select>
+<!--    <label for="attributes">Choose attribute:</label>-->
+<!--    <select name="attributes" id="attributes">-->
+<!--      <option value="first_name">first_name</option>-->
+<!--      <option value="last_name">last_name</option>-->
+<!--      <option value="address">address</option>-->
+<!--      <option value="phone_number">phone_number</option>-->
+<!--      <option value="email">email</option>-->
+<!--      <option value="gender">gender</option>-->
+<!--    </select>-->
+
+<!--    selection boxen-->
+
+
+    <div style="margin: 10px 5px" class="container">
+      <form class="form">
+        <div  class="selectbox selectbox--unselect" data-option="">
+          <div class="selectbox__displayWord">
+            -- Attribute --
+          </div>
+          <div class="option-container">
+            <div class="option-container__option">
+              <input type="radio" class="option__radio"  name="category">
+              <label class="option__label" >First Name</label>
+            </div>
+            <div class="option-container__option">
+              <input type="radio" class="option__radio"  name="category">
+              <label class="option__label" >Last Name</label>
+            </div>
+            <div class="option-container__option">
+              <input type="radio" class="option__radio"  name="category">
+              <label class="option__label" >Adress</label>
+            </div>
+            <div class="option-container__option">
+              <input type="radio" class="option__radio"  name="category">
+              <label class="option__label" >Phone Number</label>
+            </div>
+            <div class="option-container__option">
+              <input type="radio" class="option__radio"  name="category">
+              <label class="option__label" >Email</label>
+            </div>
+
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+
+<!--    //////////////////search bar //////////////// -->
+
+    <div class="bar">
+      <input class="searchbar" type="text" title="Search">
+      <a href="#"> <img  src="https://img.icons8.com/nolan/64/google-web-search.png"/> </a>
+
+    </div>
+
+    <!--    ////////////////// //////////////// -->
   </form>
 
   <br>
@@ -71,5 +134,5 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
-
+<script src="js/vendor/selectionbox.js"></script>
 </html>
