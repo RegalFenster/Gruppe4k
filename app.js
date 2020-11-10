@@ -8,7 +8,7 @@ app.use(express.static('./'));
 
 /** WHEN SERVER STARTING -> CACHE WILL BE UPDATED  */
 db_com.setUp();
-db_com.selectAll("Customer");
+//db_com.selectAll("Customer");
 
 app.get("/", (req, res) => {
   console.log("Redirect...");

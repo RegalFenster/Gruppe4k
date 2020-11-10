@@ -1,12 +1,16 @@
-const mysql = require("mysql");
-const fs = require('fs');
+const mysql = require("mysql");   // packages for mysql
+const dotenv =require('dotenv');  // packages for environmental variables
+const fs = require('fs');         // packages for file in- and output
 const Customer = require("../Customer.js").Customer;
+dotenv.config();
 var con;
 
 module.exports.db_com = class database_com {
 
   /** CREATES CONNECTION  TO MYSQL SERVER */
   setUp() {
+    console.log(process.env.HOST);
+
     con = mysql.createConnection({
       host: process.env.HOST,
       user: process.env.USER,
@@ -26,6 +30,7 @@ module.exports.db_com = class database_com {
 /** MAKES SQL CALL - SELECT ALL */
   selectAll(table) {
     if (con === undefined) console.log("No connection to database!");
+
 
     var sql = "SELECT * FROM " + table;
 
