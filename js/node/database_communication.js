@@ -8,10 +8,10 @@ module.exports.db_com = class database_com {
   /** CREATES CONNECTION  TO MYSQL SERVER */
   setUp() {
     con = mysql.createConnection({
-      host: "remotemysql.com",
-      user: "AG1vGP8SGG",
-      password: "E2bDlknJBX",
-      database: "AG1vGP8SGG"
+      host: process.env.HOST,
+      user: process.env.USER,
+      password: process.env.PASSWORD,
+      database: process.env.DATABASE
     });
 
 

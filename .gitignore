@@ -72,3 +72,4 @@ fabric.properties
 
 # Node JS
 node_modules
+.env
