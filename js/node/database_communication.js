@@ -30,7 +30,6 @@ module.exports.db_com = class database_com {
   selectAll(table) {
     if (con === undefined) console.log("No connection to database!");
 
-
     var sql = "SELECT * FROM " + table;
 
     con.query(sql, (err, result) => {
