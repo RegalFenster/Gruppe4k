@@ -1,6 +1,6 @@
 const mysql = require("mysql");   // packages for mysql
 const dotenv =require('dotenv');  // packages for environmental variables
-const fs = require('fs');         // packages for file in- and output
+const fs = require('fs');         // packages for file in- and outpu
 const Customer = require("../Customer.js").Customer;
 dotenv.config();
 var con;
@@ -25,7 +25,6 @@ module.exports.db_com = class database_com {
       console.log("Connected to " + con.database + "!");
     });
 
-    con.end();
   }
 /** MAKES SQL CALL - SELECT ALL */
   selectAll(table) {
