@@ -65,7 +65,7 @@
     <div style="margin: 10px 5px" class="container">
       <form class="form">
         <div  class="selectbox selectbox--unselect" data-option="">
-          <div class="selectbox__displayWord">
+          <div id="selected"class="selectbox__displayWord">
             -- Attribute --
           </div>
           <div class="option-container">
@@ -79,7 +79,7 @@
             </div>
             <div class="option-container__option">
               <input type="radio" class="option__radio"  name="category">
-              <label class="option__label" >Adress</label>
+              <label class="option__label" >Address</label>
             </div>
             <div class="option-container__option">
               <input type="radio" class="option__radio"  name="category">
@@ -100,8 +100,8 @@
 <!--    //////////////////search bar //////////////// -->
 
     <div class="bar">
-      <input class="searchbar" type="text" title="Search">
-      <a href="#"> <img  src="https://img.icons8.com/nolan/64/google-web-search.png"/> </a>
+      <input id="filterInput"class="searchbar" type="text" title="Search">
+      <a href="#"> <img id="searchImg" src="https://img.icons8.com/nolan/64/google-web-search.png"/> </a>
 
     </div>
 
@@ -125,7 +125,8 @@
 
   <script src="js/vendor/modernizr-3.11.2.min.js" type="application/javascript"></script>
   <script src="js/plugins.js" type="application/javascript"></script>
-  <script src="js/main.js" type="application/javascript" async></script>
+  <script src="js/main.js" type="module" async></script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

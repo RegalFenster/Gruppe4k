@@ -42,7 +42,7 @@ module.exports.db_com = class database_com {
 /** FORMATS DATA FROM DATABASE TO FIT FOR HTML AND JAVASCRIPT */
   async formatResult(result) {
     var customers_info = ["cust_id", "firstname", "lastname", "address", "phone_number", "email", "gender"];
-    const customers = new Customer(result.length);
+    const customers = [];
 
 
     result.forEach((column, index) => {
