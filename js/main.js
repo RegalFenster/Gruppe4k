@@ -51,6 +51,7 @@ if(key===undefined||value===undefined){return;}
  * @param contains indicates if key should contain the value or be equals to it
  * */
 async function getCustomers(key, value) {
+  if(content===undefined||content===""){return;}
   let customers = content.substring(0, content.length - 1).split(";");
   let filteredCustomers = [];
   key=getKey(key);
@@ -72,7 +73,7 @@ async function getCustomers(key, value) {
       if(key===""){
         filteredCustomers[filteredCustomers.length] = custo;
       }
-        else if(filt.includes(value)){
+        else if(filt.toLowerCase().includes(value.toLowerCase())){
           filteredCustomers[filteredCustomers.length] = custo;
         }
 
