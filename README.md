@@ -1,11 +1,9 @@
 # Gruppe4k
 exercise agile project management
 
-**Note:**
---
-Before running the server we need to make some configurations:
-* Go to Edit Configurations
-    * Add New Configuration
-        * Select Node.js
-            * Give Your Server a name.
-            * In JavaScript File => write: ```app.js```
+Short installation guide:
+
+
+Go to node installation folder with cmd and run npm install
+(maybe you also need to run npm install mysql, npm install dotenv, npm install express)
+Move this project folder to the application folder in the node folder :)
