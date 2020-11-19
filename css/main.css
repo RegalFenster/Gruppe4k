@@ -56,80 +56,14 @@ a{
   width: 32.2%;
 }
 
-/* Header & Navigation */
 
-header{
-  max-width: 100%;
-  background: #222; /*FallBack*/
-  background: rgba(0,0,0,.6);
-  padding: 20px;
-}
-
-nav{
-  width: 100%;
-  margin-bottom: 1em;
-  background: #323232;
-  font-family: 'Poiret One';
-}
-
-.logo{
-  text-align: center;
-  color: #fff;
-  font-size: 3em;
-  font-weight: 400;
-  font-family: 'Poiret One';
-}
-
-ul{
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  color: #fff;
-  text-align: center;
-  -webkit-transition: max-height 0.5s;
-  transition: max-height 0.5s;
-}
-
-.nav-item{
-  display: inline-block;
-  padding: 20px;
-  font-size: 1.4em;
-  -webkit-transition: background .5s;
-  transition: background .5s
-}
-
-.nav-item:hover{
-  background: #474747;
-  cursor: pointer;
-}
-
-.menu-bar{
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #2d2d2d;
-  text-align: left;
-  padding: 15px 20px;
-  color: #fff;
-  font-size: 1.4em;
-  cursor: pointer;
-  display: none;
-}
-
-.hamburger-icon{
-  float: right;
-  clear: both;
-  margin-top: -5px;
-  font-size: 1.4em;
-}
 
 /* Blog Posts */
 
 .container{
   max-width: 1020px;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .blog-post{
@@ -241,14 +175,16 @@ h1 {
   font-size: 30px;
   font-weight: normal;
   text-transform: uppercase;
+
 }
 
 /*------------- Selection style------------------*/
 
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 20px auto 20px;
+  text-align: center;
 }
 
 
@@ -263,9 +199,6 @@ body {
 
 }
 
-.container {
-  padding: 32px;
-}
 .container__title {
   font-size: 25px;
   font-weight: 600;
@@ -283,6 +216,10 @@ body {
   flex-direction: column;
   flex-grow: 1;
   max-width: 300px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .option-container {
   background-color: var(--select-theme);
@@ -299,6 +236,7 @@ body {
   max-height: 240px;
   opacity: 1;
   overflow-y: scroll;
+
 }
 
 .selectbox__displayWord,
@@ -306,6 +244,7 @@ body {
   padding: 12px 24px;
   cursor: pointer;
   user-select: none;
+  margin-bottom: 0;
 }
 
 .selectbox__displayWord {
@@ -401,10 +340,10 @@ body {
   margin-right: 20px;
 }
 
-  /*//////////////////search bar //////////////// */
+/*//////////////////search bar //////////////// */
 .bar{
-  margin:0px  850px;
-  width:575px;
+  margin: 0 auto 0;
+  width: auto;
 
 }
 .bar:hover{
@@ -420,7 +359,9 @@ body {
   width:300px;
   font-size:16px;
   outline: none;
-  margin-bottom: 400px;
+}
+#searchImg{
+  margin: 0px;
 }
 
 
