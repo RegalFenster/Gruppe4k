@@ -5,13 +5,12 @@
 <head>
   <meta charset="utf-8">
   <title>View Data</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -19,6 +18,7 @@
 
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
+  <!-- <link rel="stylesheet" href="css/Responsive.css" type="text/css"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
@@ -57,12 +57,19 @@
 <!--      <option value="gender">gender</option>-->
 <!--    </select>-->
 
-<!--    selection boxen-->
+
 
 
     <div class="container">
       <form class="form">
-        <div  class="selectbox selectbox--unselect" data-option="">
+      <!--    //////////////////search bar //////////////// --> 
+        <div class="bar">
+          <input id="filterInput"class="searchbar" type="text" title="Search">
+          <a href="#"> <img id="searchImg" src="https://img.icons8.com/nolan/64/google-web-search.png"/> </a>
+    <!--    selection boxen-->
+        </div>
+           <!-- <div  class="selectbox selectbox--unselect" > -->
+          <div  class="selectbox selectbox--unselect" >
           <div id="selected"class="selectbox__displayWord">
             -- Attribute --
           </div>
@@ -95,15 +102,11 @@
 
     </div>
 
-<!--    //////////////////search bar //////////////// -->
 
-    <div class="bar">
-      <input id="filterInput"class="searchbar" type="text" title="Search">
-      <a href="#"> <img id="searchImg" src="https://img.icons8.com/nolan/64/google-web-search.png"/> </a>
 
-    </div>
+   
 
-    <!--    ////////////////// //////////////// -->
+   
   </form>
 
   <br>
