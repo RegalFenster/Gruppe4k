@@ -6,6 +6,7 @@ const express = require('express');
 const app = express();
 app.use(express.static('./'));
 
+
 /** WHEN SERVER STARTING -> CACHE WILL BE UPDATED  */
 db_com.setUp();
 db_com.selectAll("Customer");
@@ -24,6 +25,8 @@ app.get("/Customers", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-var server = app.listen(3000, () => console.log("Listening Port: 3000 ..."));
+const port = process.env.PORT || 3000;
+
+var server = app.listen(port, () => console.log("Listening Port: 3000 ..."));
 
 
