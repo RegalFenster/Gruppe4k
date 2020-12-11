@@ -24,6 +24,6 @@ app.get("/Customers", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
 
-var server = app.listen(63342, () => console.log("Listening Port: 63342 ..."));
+var server = app.listen(80, () => console.log("Listening Port: 80 ..."));
 
 
