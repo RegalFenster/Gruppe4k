@@ -1,18 +1,23 @@
 {
-  "name": " ",
+  "name": "Group4k",
   "version": "0.0.1",
   "description": "",
   "keywords": "",
   "license": "",
   "author": "",
+  "engines": {
+   "node": "12.11.1",
+   "npm":  "6.14.8"
+   },
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
-    "start": "npm run build && npm run dev",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "sync-glitch-cli": "^2.0.1"
   },
   "dependencies": {
     "dotenv": "^5.0.1",

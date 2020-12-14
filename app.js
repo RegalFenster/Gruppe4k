@@ -7,6 +7,7 @@ const app = express();
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('./'));
 
+
 /** WHEN SERVER STARTING -> CACHE WILL BE UPDATED  */
 db_com.setUp();
 db_com.selectAll("Customer");
@@ -31,6 +32,11 @@ app.post("/addCustomer",  async (req,res)=>{
   await res.redirect("/");
 });
 
-var server = app.listen(63340, () => console.log("Listening Port: 63342 ..."));
+
+const port = process.env.PORT || 3000;
+
+var server = app.listen(port, function() {
+  console.log("Server started successfully");
+});
 
 
