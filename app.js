@@ -4,6 +4,7 @@ const db = require("./js/node/database_communication");
 var db_com = new db.db_com();
 const express = require('express');
 const app = express();
+app.use(express.urlencoded({extended:true}));
 app.use(express.static('./'));
 
 /** WHEN SERVER STARTING -> CACHE WILL BE UPDATED  */
@@ -16,14 +17,20 @@ app.get("/", (req, res) => {
 });
 
 //Get request at start views
-app.get("/Customers", (req, res) => {
+app.get("/Customers",  (req, res) => {
   /** uncommend if you want updates when refreshing page */
   //db_com.setUp();
-  //db_com.selectAll("Customer");
-
-  res.sendFile(__dirname + "/index.html");
+  //await db_com.selectAll("Customer");
+   res.sendFile(__dirname + "/index.html");
 });
 
-var server = app.listen(63342, () => console.log("Listening Port: 63342 ..."));
+/** Customer will be added to database when post request is made to this route */
+app.post("/addCustomer",  async (req,res)=>{
+  await db_com.insert(req.body);
+  await db_com.selectAll("Customer");
+  await res.redirect("/");
+});
+
+var server = app.listen(63340, () => console.log("Listening Port: 63342 ..."));
 
 

@@ -22,8 +22,6 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-
-
 <body>
 
 <!-- Navbar -->
@@ -38,20 +36,20 @@
 <p>On this page you can enter new data to the database. Press the "submit" button when you are done.</p>
 
 <!-- Forms for new data entry -->
-<form action="">
+<form name="insertion"  action="/addCustomer" method="POST">
   <label for="fname"></label><br>
-  <input type="text" id="fname" name="fname" placeholder="First name:"><br>
+  <input type="text" id="fname" name="fname" placeholder="First name:" pattern="[A-Za-z]{3,}" title="Only letters are allowed" required><br>
   <label for="lname"></label><br>
-  <input type="text" id="lname" name="lname" placeholder="Last name:"><br>
+  <input type="text" id="lname" name="lname" placeholder="Last name:" pattern="[A-Za-z]{3,}" title="Only letters are allowed" required><br>
   <label for="fname"></label><br>
-  <input type="text" id="address" name="address" placeholder="Address:"><br>
+  <input type="text" id="address" name="address" placeholder="Address:" pattern="[A-Za-z0-9\s]{3,}" title="Letters space and digits are allowed" required><br>
   <label for="address"></label><br>
-  <input type="text" id="ph_number" name="ph_number" placeholder="Phone number:"><br>
+  <input type="text" id="ph_number" name="ph_number" placeholder="Phone number:" pattern="[+0-9\s]{3,}" title="Only digits are allowed" required><br>
   <label for="ph_number"></label><br>
-  <input type="text" id="email" name="email" placeholder="Email:"><br>
+  <input type="email" id="email" name="email" placeholder="Email:" required><br>
   <label for="email"></label><br>
-  <input type="text" id="gender" name="gender" placeholder="Gender:"><br> <br>
-  <input type="submit" value="Submit">
+  <input type="text" id="gender" name="gender" placeholder="Gender:" pattern="male|female|diverse" title="Only letters are allowed" required><br> <br>
+  <button type="submit" value="Submit">Submit</button>
 </form>
 
 
@@ -61,6 +59,7 @@
 
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script src="js/node/add_user.js"></script>
 <script>
   window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
   ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')

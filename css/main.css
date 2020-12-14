@@ -160,12 +160,10 @@ a{
 h1 {
   font-weight: normal;
   font-size: 30px;
-  font-weight: normal;
+  /*font-weight: normal;*/
   text-transform: uppercase;
   margin: 50px 30px 0px 0px;
   font-family: Lato , sans-serif;
-
-
 }
 
 /*------------- Selection style------------------*/
@@ -375,19 +373,19 @@ body {
 /* @480px */
 @media only screen and (max-width: 30em){
   body{
-   
+
     font-size: 9px;
-  
+
   }
- 
-    
-   
+
+
+
   }
   .bar{
     margin: 0px 0px 0px 0px;
-    
+
   }
- 
+
   .selectbox{
     margin-bottom: 100px;
   }

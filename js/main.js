@@ -30,6 +30,7 @@ async function addToTable (key,value) {
   }
 if(key===undefined||value===undefined){return;}
 
+if(customers===undefined||customers.length<1){return;}
 
   for (let i = 0; i < customers.length ; i++) {
     let row = document.createElement('tr');
@@ -97,7 +98,6 @@ async function getCustomersContent() {
 
 
 async function filter() {
-  var customers;
   let attribute = document.getElementById('selected');
   let searchImg = document.getElementById('searchImg');
   let filterText = document.getElementById('filterInput');
