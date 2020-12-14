@@ -27,6 +27,8 @@ app.get("/Customers", (req, res) => {
 
 const port = process.env.PORT || 3000;
 
-var server = app.listen(port, () => console.log("Listening Port: 3000 ..."));
+var server = app.listen(port, function() { 
+  console.log("Server started successfully");
+});
 
 
