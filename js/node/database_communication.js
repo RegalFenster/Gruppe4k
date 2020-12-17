@@ -18,7 +18,6 @@ module.exports.db_com = class database_com {
       database: process.env.DATABASE
     });
 
-
     con.connect(function (err) {
       if (err) throw err;
 
@@ -43,11 +42,8 @@ module.exports.db_com = class database_com {
   insert(customer) {
     var sql = "INSERT INTO Customer(firstname,lastname,address,phone_number,email,gender) " +
       "VALUES ('" + customer.fname + "','" + customer.lname + "','" + customer.address + "'," + customer.ph_number + ",'" + customer.email + "','" + customer.gender + "')";
-
-    console.log(sql);
-    console.log(customer);
     con.query(sql, (err) => {
-      if (err){ console.log(err);}
+      if (err){ throw err;} // maybe create error html
 
       console.log("Insertion successful");
     });
