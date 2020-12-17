@@ -208,7 +208,7 @@ body {
   max-width: 600px;
   padding-top: 0;
   padding-bottom: 0;
-  margin-top: 11px;
+  margin-top: -8px;
   margin-bottom: 0;
   float: left;
 }
@@ -398,7 +398,37 @@ body {
   .selectbox {
     margin-left: 85px;
 }
-
+/* table style */
+table{
+  
+  
+  box-shadow: 0 2px 15px rgba(64,64,64,.7);
+ 
+ }
+ td , th{
+  padding: 15px 20px;
+  text-align: center;
+  
+ 
+ }
+ th{
+  background-color: #906db9;
+  color: #fafafa;
+  font-family: 'Open Sans',Sans-serif;
+  font-weight: 160;
+  text-transform: uppercase;
+  font-size: 15px;
+ 
+ }
+ tr{
+  width: 100%;
+  background-color: #fafafa;
+  font-family: 'Montserrat', sans-serif;
+ }
+ tr:nth-child(even){
+  background-color: #eeeeee;
+ }
+ 
 /*!* Button *!*/
 
 /*.button{*/
