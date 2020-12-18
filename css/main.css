@@ -359,7 +359,12 @@ body {
   align-content: center;
 }
 
-
+.form-border{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
+ }
 /*////////////////// //////////////// */
 
 /*Mobile Responsive*/
@@ -382,19 +387,24 @@ body {
         margin-bottom: 20px;
       }
       
-     
+      .form-border{
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+        width: 100%;
+       }
 
      
       .selectbox{
         margin-left: 45px;
       }
-
+      
       }
   
   
   
   .bar{
-    margin : 0px 12px 0px 190px;
+    margin : 0px 140px 0px 190px;
 
   }
   
@@ -447,12 +457,7 @@ table{
  }
 
    /* form style */
-   .form-border{
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    width: 50%;
-   }
+   
 
    form input, select {
     width: 100%;
