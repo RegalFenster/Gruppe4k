@@ -60,18 +60,52 @@
 
 
     <div class="container">
+     
+     
       <form class="form">
       <!--    //////////////////search bar //////////////// -->
-        <div class="bar">
+      <div id="selectionbox-display-mobile">
+        <div  class="selectbox selectbox--unselect" >
+      <div id="selected"class="selectbox__displayWord">
+        <!-- -- Attribute -- -->
+        <label class="option__label" >First Name</label>
+      </div>
+      <div class="option-container">
+        <div class="option-container__option">
+          <input type="radio" class="option__radio"  name="category">
+          <label class="option__label" >First Name</label>
+        </div>
+        <div class="option-container__option">
+          <input type="radio" class="option__radio"  name="category">
+          <label class="option__label" >Last Name</label>
+        </div>
+        <div class="option-container__option">
+          <input type="radio" class="option__radio"  name="category">
+          <label class="option__label" >Address</label>
+        </div>
+        <div class="option-container__option">
+          <input type="radio" class="option__radio"  name="category">
+          <label class="option__label" >Phone Number</label>
+        </div>
+        <div class="option-container__option">
+          <input type="radio" class="option__radio"  name="category">
+          <label class="option__label" >Email</label>
+        </div>
+      </div>
+      </div>
+    </div> 
+      
+      <div class="bar">
           <input id="filterInput"class="searchbar" type="text" title="Search">
           <a href="#"> <img id="searchImg" src="https://img.icons8.com/nolan/64/google-web-search.png"/> </a>
     <!--    selection boxen-->
         </div>
            <!-- <div  class="selectbox selectbox--unselect" > -->
-          <div  class="selectbox selectbox--unselect" >
-          <div id="selected"class="selectbox__displayWord">
+          <!-- <div id="selectionbox-hidden-mobile">
+            <div  class="selectbox selectbox--unselect" >
+          <div id="selected"class="selectbox__displayWord"> -->
             <!-- -- Attribute -- -->
-            <label class="option__label" >First Name</label>
+            <!-- <label class="option__label" >First Name</label>
           </div>
           <div class="option-container">
             <div class="option-container__option">
@@ -94,9 +128,9 @@
               <input type="radio" class="option__radio"  name="category">
               <label class="option__label" >Email</label>
             </div>
-
           </div>
-        </div>
+          </div>
+        </div> -->
 
       </form>
 
@@ -108,10 +142,11 @@
 
 
   </form>
-
+  
   <br>
   
   <!-- The Results in table form -->
+  <div id="table-style">
   <table id="customerTable">
     <tr>
       <th>first name</th>
@@ -123,7 +158,7 @@
     </tr>
   </table>
 
-
+</div>
   <script src="js/vendor/modernizr-3.11.2.min.js" type="application/javascript"></script>
   <script src="js/plugins.js" type="application/javascript"></script>
   <script src="js/main.js" type="module" async></script>

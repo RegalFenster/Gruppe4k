@@ -87,8 +87,9 @@ a{
 
 .container{
   max-width: 1020px;
-  margin: 0 auto;
+  display: inline;
   padding-top: 20px;
+  
 }
 
 .blog-post{
@@ -358,6 +359,7 @@ body {
   align-content: center;
 }
 
+
 /*////////////////// //////////////// */
 
 /*Mobile Responsive*/
@@ -366,22 +368,38 @@ body {
 
 /* @480px */
 @media only screen and (max-width: 30em){
-  body{
+      body{
 
-    font-size: 9px;
+        font-size: 9px;
 
-  }
+      }
 
+      h1{
+        font-size: 20px;
+        margin-left: 70px;
+      }
+      #searchImg{
+        margin-bottom: 20px;
+      }
+      
+     
 
+     
+      .selectbox{
+        margin-left: 45px;
+      }
 
-  }
+      }
+  
+  
+  
   .bar{
-    margin: 0px 0px 0px 0px;
+    margin : 0px 12px 0px 190px;
 
   }
-
+  
   .selectbox{
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   }
   #customerTable{
 
@@ -390,9 +408,14 @@ body {
     align-content: center;
   }
   .selectbox {
-    margin-left: 85px;
+    margin-left: 145px;
 }
 /* table style */
+
+#table-style{
+  margin-top: 130px;
+}
+
 table{
   
   
