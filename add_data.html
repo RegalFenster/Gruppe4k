@@ -38,15 +38,15 @@
 <!-- Forms for new data entry -->
 <div class="form-border">
   <form name="insertion"  action="/addCustomer" method="POST">
-   
-    <input type="text" id="fname" name="fname" placeholder="First name:" pattern="[A-Za-z]{3,}" title="Only letters are allowed" required><br>
-   
-    <input type="text" id="lname" name="lname" placeholder="Last name:" pattern="[A-Za-z]{3,}" title="Only letters are allowed" required><br>
-    
-    <input type="text" id="address" name="address" placeholder="Address:" pattern="[A-Za-z0-9\s]{3,}" title="Letters space and digits are allowed" required><br>
-   
-    <input type="text" id="ph_number" name="ph_number" placeholder="Phone number:" pattern="[+0-9\s]{3,}" title="Only digits are allowed" required><br>
-   
+
+    <input type="text" id="fname" name="fname" placeholder="First name:" pattern="[A-Za-z]{3,25}" title="Only letters are allowed between 3 and 25 characters " required><br>
+
+    <input type="text" id="lname" name="lname" placeholder="Last name:" pattern="[A-Za-z]{3,25}" title="Only letters are allowed between 3 and 25 characters" required><br>
+
+    <input type="text" id="address" name="address" placeholder="Address:" pattern="[A-Za-z0-9\s]{3,100}" title="Letters space and digits are allowed between 3 and 100 characters" required><br>
+
+    <input type="text" id="ph_number" name="ph_number" placeholder="Phone number:" pattern="[+0-9\s]{3,20}" title="Only digits are allowed between 3 and 20 characters" required><br>
+
     <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email:" required>
     <label id="gender-lbl">Gender :</label>
     <select id="gender" name="gender" >
