@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="js/validator.js"></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -37,26 +38,50 @@
 
 <!-- Forms for new data entry -->
 <div class="form-border">
-  <form name="insertion"  action="/addCustomer" method="POST">
+  <form name="insertion" onsubmit="return validateForm()" action="/addCustomer"  method="post">
+   
 
-    <input type="text" id="fname" name="fname" placeholder="First name:" pattern="[A-Za-z]{3,25}" title="Only letters are allowed between 3 and 25 characters " required><br>
+    <div class="row">
+        
+        <input type="text" id="fname" name="fname" placeholder="first Name" minlength="3" maxlength="20">
+        <div class="error" id="firstnameErr"></div>
+    </div>
 
-    <input type="text" id="lname" name="lname" placeholder="Last name:" pattern="[A-Za-z]{3,25}" title="Only letters are allowed between 3 and 25 characters" required><br>
+    <div class="row">
+      
+        <input type="text" id="lname" name="lname" placeholder="last Name" minlength="3"  maxlength="20">
+        <div class="error" id="lastnameErr"></div>
+    </div>
 
-    <input type="text" id="address" name="address" placeholder="Address:" pattern="[A-Za-z0-9\s]{3,100}" title="Letters space and digits are allowed between 3 and 100 characters" required><br>
+    <div class="row">
+        
+        <input type="text" id="adress" name="adress"placeholder="adress" maxlength="25">
+        <div class="error" id="adressErr"></div>
+    </div>
+    <div class="row">
+        
+      <input type="text" id="ph_number" name="ph_number"placeholder="phone number" minlength="9" maxlength="20">
+      <div class="error" id="ph_numberErr"></div>
+  </div>
 
-    <input type="text" id="ph_number" name="ph_number" placeholder="Phone number:" pattern="[+0-9\s]{3,20}" title="Only digits are allowed between 3 and 20 characters" required><br>
-
-    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email:" required>
+    <div class="row">
+       
+        <input type="text" id="email" name="email" placeholder="email adress">
+        <div class="error" id="emailErr"></div>
+    </div>
+   
     <label id="gender-lbl">Gender :</label>
     <select id="gender" name="gender" >
       <option class="gender-value" value="male">Male</option>
       <option class="gender-value" value="female">Female</option>
       <option class="gender-value" value="diverse">diverse</option>
     </select>
-    <!-- <input type="text" id="gender" name="gender" placeholder="Gender:" pattern="male|female|diverse" title="Only letters are allowed" required><br> <br> -->
-    <button id="btn"  type="submit" value="Submit">Submit</button>
-  </form>
+
+
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+</form>
   </div>
 
 

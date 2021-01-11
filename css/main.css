@@ -498,6 +498,27 @@ table{
 #gender-lbl{
   float: left;
 }
+
+
+
+/* validation style */
+
+.error {
+  color: red;
+  font-size: 90%;
+  text-align: left;
+}
+.row {
+  padding-bottom: 0px;
+}
+label {
+  display: block;
+  margin-bottom: 0px
+}
+label i {
+  color: #999;
+  font-size: 80%;
+}
 /*!* Button *!*/
 
 /*.button{*/
