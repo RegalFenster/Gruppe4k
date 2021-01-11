@@ -8,7 +8,7 @@ body{
   font-size: 16px;
   line-height: 1.4em;
   color: #222;
-  background: #dfe4ea;
+  background: white;
   font-family: 'Lato', sans-serif;
 }
 
@@ -48,7 +48,7 @@ a{
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: gray;
+  background-color: white;
   overflow: hidden;
   margin-top: 0px;
 }
@@ -56,7 +56,7 @@ a{
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 25px;
   text-decoration: none;
@@ -89,7 +89,7 @@ a{
   max-width: 1020px;
   display: inline;
   padding-top: 20px;
-  
+
 }
 
 .blog-post{
@@ -179,7 +179,7 @@ h1 {
 
 :root {
   --select-theme: white;
-  --select-theme-hover: #82ccdd;
+  --select-theme-hover: #D4002D;
   --option-color: #0d323b;
 }
 
@@ -228,7 +228,7 @@ body {
   max-height: 240px;
   opacity: 1;
   overflow-y: scroll;
-
+  background-color: lightgray;
 }
 
 .selectbox__displayWord,
@@ -245,7 +245,8 @@ body {
   color: var(--option-color);
   border-radius: 8px;
   height: 40px;
-  width: 200px
+  width: 200px;
+  background-color: lightgray;
 }
 .selectbox__displayWord::after {
   position: absolute;
@@ -280,6 +281,7 @@ body {
 }
 .option-container__option:hover {
   background-color: var(--select-theme-hover);
+  color: white;
 }
 .option__radio {
   display: none;
@@ -339,7 +341,6 @@ body {
   width: auto;
   align-content: center;
   float: right;
-
 }
 
 .searchbar{
@@ -348,9 +349,10 @@ body {
   width:300px;
   font-size:16px;
   outline: none;
+  background-color: lightgray;
 }
 #searchImg{
-  margin: 0px 0px -28px 0px;
+  margin: 0px 0px -10px 0px;
 }
 #customerTable{
 
@@ -386,7 +388,7 @@ body {
       #searchImg{
         margin-bottom: 20px;
       }
-      
+
       .form-border{
         border-radius: 5px;
         background-color: #f2f2f2;
@@ -394,20 +396,20 @@ body {
         width: 100%;
        }
 
-     
+
       .selectbox{
         margin-left: 45px;
       }
-      
+
       }
-  
-  
-  
+
+
+
   .bar{
     margin : 0px 140px 0px 190px;
 
   }
-  
+
   .selectbox{
     margin-bottom: 10px;
   }
@@ -427,16 +429,16 @@ body {
 }
 
 table{
-  
-  
+
+
   box-shadow: 0 2px 15px rgba(64,64,64,.7);
- 
+
  }
  td , th{
   padding: 15px 20px;
   text-align: center;
-  
- 
+
+
  }
  th{
   background-color: #906db9;
@@ -445,7 +447,7 @@ table{
   font-weight: 160;
   text-transform: uppercase;
   font-size: 15px;
- 
+
  }
  tr{
   width: 100%;
@@ -457,7 +459,7 @@ table{
  }
 
    /* form style */
-   
+
 
    form input, select {
     width: 100%;
@@ -488,7 +490,7 @@ table{
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  
+
 }
 
  #btn:hover {
