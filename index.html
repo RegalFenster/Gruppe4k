@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -20,9 +21,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
-
-
 </head>
+
+
 <body>
 
 <!-- Navbar -->
@@ -33,75 +34,124 @@
 </div>
 
 <hr>
-<h1> Customers Selection </h1>
-<br>
 
-<!-- button for pdf creation -->
-<form action="/download" method="post">
-  <button type="submit">generate PDF</button>
-</form>
+<h1 > Customers Selection </h1>
+  <!-- Search function -->
+
+  <!-- Load icon library -->
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+  <!-- The form -->
+<!--    <input type="text" placeholder="Search.." name="search">-->
+<!--    <button type="submit"><i class="fa fa-search"></i></button>-->
+
+<!--    <label for="attributes">Choose attribute:</label>-->
+<!--    <select name="attributes" id="attributes">-->
+<!--      <option value="first_name">first_name</option>-->
+<!--      <option value="last_name">last_name</option>-->
+<!--      <option value="address">address</option>-->
+<!--      <option value="phone_number">phone_number</option>-->
+<!--      <option value="email">email</option>-->
+<!--      <option value="gender">gender</option>-->
+<!--    </select>-->
 
 
-<!-- The form -->
 
 
-<div class="container">
+    <div class="container">
 
 
 
-    <!--    ////////////////// dropdown //////////////// -->
-    <div id="selectionbox-display-mobile">
-      <div class="selectbox selectbox--unselect">
-        <div id="selected" class="selectbox__displayWord">
-          <!-- -- Attribute -- -->
-          <label class="option__label">First Name</label>
+      <!--    //////////////////search bar //////////////// -->
+      <div id="selectionbox-display-mobile">
+        <div  class="selectbox selectbox--unselect" >
+      <div id="selected"class="selectbox__displayWord">
+        <!-- -- Attribute -- -->
+        <label class="option__label" >Attribute</label>
+      </div>
+      <div class="option-container">
+        <div class="option-container__option">
+          <input type="radio" class="option__radio"  name="category">
+          <label class="option__label" >First Name</label>
         </div>
-        <div class="option-container">
-          <div class="option-container__option">
-            <input type="radio" class="option__radio" name="category">
-            <label class="option__label">First Name</label>
-          </div>
-          <div class="option-container__option">
-            <input type="radio" class="option__radio" name="category">
-            <label class="option__label">Last Name</label>
-          </div>
-          <div class="option-container__option">
-            <input type="radio" class="option__radio" name="category">
-            <label class="option__label">Address</label>
-          </div>
-          <div class="option-container__option">
-            <input type="radio" class="option__radio" name="category">
-            <label class="option__label">Phone Number</label>
-          </div>
-          <div class="option-container__option">
-            <input type="radio" class="option__radio" name="category">
-            <label class="option__label">Email</label>
-          </div>
+        <div class="option-container__option">
+          <input type="radio" class="option__radio"  name="category">
+          <label class="option__label" >Last Name</label>
         </div>
+        <div class="option-container__option">
+          <input type="radio" class="option__radio"  name="category">
+          <label class="option__label" >Address</label>
+        </div>
+        <div class="option-container__option">
+          <input type="radio" class="option__radio"  name="category">
+          <label class="option__label" >Phone Number</label>
+        </div>
+        <div class="option-container__option">
+          <input type="radio" class="option__radio"  name="category">
+          <label class="option__label" >Email</label>
+        </div>
+      </div>
       </div>
     </div>
 
-    <!-- searchbar -->
-    <div class="bar">
-      <input id="filterInput" class="searchbar" type="text" title="Search">
-      <button style="border-style: none" type="button" onclick="filter()">
-        <img id="searchImg"
-             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfSLQD0rieuRUlO0B4rFCBgIcy8HBLeHK_A&usqp=CAU"
-             style="width: 30px; height: 30px;"/>
-      </button>
+      <!-- searchbar -->
+      <div class="bar">
+        <input id="filterInput" class="searchbar" type="text" title="Search">
+        <button style="border-style: none" type="button" onclick="filter()">
+          <img id="searchImg"
+               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfSLQD0rieuRUlO0B4rFCBgIcy8HBLeHK_A&usqp=CAU"
+               style="width: 30px; height: 30px;"/>
+        </button>
+
+
+      </div>
+           <!-- <div  class="selectbox selectbox--unselect" > -->
+          <!-- <div id="selectionbox-hidden-mobile">
+            <div  class="selectbox selectbox--unselect" >
+          <div id="selected"class="selectbox__displayWord"> -->
+            <!-- -- Attribute -- -->
+            <!-- <label class="option__label" >First Name</label>
+          </div>
+          <div class="option-container">
+            <div class="option-container__option">
+              <input type="radio" class="option__radio"  name="category">
+              <label class="option__label" >First Name</label>
+            </div>
+            <div class="option-container__option">
+              <input type="radio" class="option__radio"  name="category">
+              <label class="option__label" >Last Name</label>
+            </div>
+            <div class="option-container__option">
+              <input type="radio" class="option__radio"  name="category">
+              <label class="option__label" >Address</label>
+            </div>
+            <div class="option-container__option">
+              <input type="radio" class="option__radio"  name="category">
+              <label class="option__label" >Phone Number</label>
+            </div>
+            <div class="option-container__option">
+              <input type="radio" class="option__radio"  name="category">
+              <label class="option__label" >Email</label>
+            </div>
+          </div>
+          </div>
+        </div> -->
+
 
 
     </div>
 
 
 
-</div>
 
 
-<br>
 
-<!-- The Results in table form -->
-<div id="table-style">
+
+
+  <br>
+
+  <!-- The Results in table form -->
+  <div id="table-style">
   <table id="customerTable">
     <tr>
       <th>first name</th>
@@ -113,30 +163,19 @@
     </tr>
   </table>
 
-
 </div>
-<script src="js/vendor/modernizr-3.11.2.min.js" type="application/javascript"></script>
-<script src="js/plugins.js" type="application/javascript"></script>
-<script src="js/main.js" type="module" async></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js" type="application/javascript"></script>
+  <script src="js/plugins.js" type="application/javascript"></script>
+  <script src="js/main.js" type="module" async></script>
 
 
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-  window.ga = function () {
-    ga.q.push(arguments)
-  };
-  ga.q = [];
-  ga.l = +new Date;
-  ga('create', 'UA-XXXXX-Y', 'auto');
-  ga('set', 'anonymizeIp', true);
-  ga('set', 'transport', 'beacon');
-  ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async></script>
-
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 <script src="js/vendor/selectionbox.js"></script>
 
-<!-- don't delete de damn main.js next time!!!! -->
-<script src="js/main.js"></script>
 </html>

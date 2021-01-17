@@ -441,8 +441,8 @@ table{
 
  }
  th{
-  background-color: #906db9;
-  color: #fafafa;
+  background-color: lightgrey;
+  color: black;
   font-family: 'Open Sans',Sans-serif;
   font-weight: 160;
   text-transform: uppercase;
