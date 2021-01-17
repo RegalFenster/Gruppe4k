@@ -74,14 +74,18 @@ async function getCustomers(key, value) {
       if(key===""){
         filteredCustomers[filteredCustomers.length] = custo;
       }
+      else if(filt === undefined  || value === undefined) {
+        // console.log(filt + " " + value);
+      }
         else if(filt.toLowerCase().includes(value.toLowerCase())){
           filteredCustomers[filteredCustomers.length] = custo;
         }
 
   });
 
-  filteredCustomers.forEach((value, index) => {
-  });
+/*  filteredCustomers.forEach((value, index) => {
+    console.log(value);
+  });*/
 
   return filteredCustomers;
 }
