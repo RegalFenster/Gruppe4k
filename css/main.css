@@ -835,3 +835,6 @@ label i {
 /*  }*/
 /*}*/
 
+.option__label {
+  margin: 0;
+}
