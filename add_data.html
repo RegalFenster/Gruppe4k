@@ -31,7 +31,7 @@
   <a href="index.html">View Data</a>
   <a class="active"  href="add_data.html">Add new Data</a>
 </div>
-
+<hr>
 <!-- Information -->
 <h1>Data entry</h1>
 <p>On this page you can enter new data to the database. Press the "submit" button when you are done.</p>
@@ -39,37 +39,37 @@
 <!-- Forms for new data entry -->
 <div class="form-border">
   <form name="insertion" onsubmit="return validateForm()" action="/addCustomer"  method="post">
-   
+
 
     <div class="row">
-        
+
         <input type="text" id="fname" name="fname" placeholder="first Name" minlength="3" maxlength="20">
         <div class="error" id="firstnameErr"></div>
     </div>
 
     <div class="row">
-      
+
         <input type="text" id="lname" name="lname" placeholder="last Name" minlength="3"  maxlength="20">
         <div class="error" id="lastnameErr"></div>
     </div>
 
     <div class="row">
-        
+
         <input type="text" id="adress" name="adress"placeholder="adress" maxlength="25">
         <div class="error" id="adressErr"></div>
     </div>
     <div class="row">
-        
+
       <input type="text" id="ph_number" name="ph_number"placeholder="phone number" minlength="9" maxlength="20">
       <div class="error" id="ph_numberErr"></div>
   </div>
 
     <div class="row">
-       
+
         <input type="text" id="email" name="email" placeholder="email adress">
         <div class="error" id="emailErr"></div>
     </div>
-   
+
     <label id="gender-lbl">Gender :</label>
     <select id="gender" name="gender" >
       <option class="gender-value" value="male">Male</option>
@@ -79,7 +79,7 @@
 
 
     <div class="row">
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" style="background-color: #D4002D; color: white; border-radius: 40px">
     </div>
 </form>
   </div>
