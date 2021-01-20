@@ -124,8 +124,34 @@ a{
   text-decoration: underline;
   text-decoration-color: currentColor;
 }
+/* pdf button style */
 
+#pdf {
+  float: right;
+  margin: 100px 5px 0px 0px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  padding: 8px
+  
+}
+#pdf:hover{
+  background-color: #D4002D;
+  color: white;
+  cursor: pointer;
+}
 
+/* add new Data button style */
+
+#form_button{
+  background-color: #e63a60;
+  color: white;
+  border-radius: 40px"
+  
+}
+#form_button:hover{
+  background-color: #D4002D;
+}
 
 .post-link:hover{
   color: #005c7b;
