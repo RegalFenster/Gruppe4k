@@ -145,13 +145,13 @@ a{
 /* add new Data button style */
 
 #form_button{
-  background-color: #e63a60;
+  background-color: #D4002D;
   color: white;
-  border-radius: 40px"
+  border-radius: 40px;
 
 }
 #form_button:hover{
-  background-color: #D4002D;
+  background-color: #AC0022;
 }
 
 .post-link:hover{
