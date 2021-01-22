@@ -1,15 +1,13 @@
 // creates extern connection from webstorm ide
 
-const jspdf = require('jspdf');
 const db = require("./js/node/database_communication");
-let db_com = new db.db_com();
-let html_to_pdf = require('html-pdf-node');
-var pdf = require('html-pdf');
-var fs = require('fs');
 const express = require('express');
 const app = express();
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('./'));
+let db_com = new db.db_com();
+let pdf = require('html-pdf');
+let fs = require('fs');
 
 
 /** WHEN SERVER STARTING -> CACHE WILL BE UPDATED  */

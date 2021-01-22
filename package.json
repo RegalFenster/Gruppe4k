@@ -22,9 +22,7 @@
   "dependencies": {
     "dotenv": "^5.0.1",
     "express": "^4.17.1",
-    "jspdf": "^2.3.0",
     "mysql": "^2.18.1",
-    "html-pdf-node": "^1.0.7",
     "html-pdf": "^2.2.0"
   }
 }
