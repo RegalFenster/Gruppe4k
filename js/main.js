@@ -135,4 +135,16 @@ function getKey(attribute){
 /** Call Functions */
 getCustomersContent();
 
+// export the table as pdf
 
+function generate() {
+  var doc = new jspdf.jsPDF()
+
+  // Simple data example
+
+
+  // Simple html example
+  doc.autoTable({ html: '#customerTable' })
+
+  doc.save('table.pdf')
+}

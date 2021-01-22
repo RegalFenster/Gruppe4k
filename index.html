@@ -24,7 +24,10 @@
 
 
 <body>
+  
 
+  <script src="js/jspdf.umd.js"></script>
+  <script src="js/jspdf.plugin.autotable.js"></script>
 <!-- Navbar -->
 <div class="topnav">
   <img src="img/logo_fh_2_color.svg" alt="FH-JOANNEUM Logo">
@@ -38,11 +41,11 @@
 <div class="container">
 
   <br>
-  <form action="/download" method="post">
-    <button id="pdf"type="submit">
+  
+    <button id="pdf"type="submit" onclick="generate()" >
       Download PDF
     </button>
-  </form>
+  
   <!--    //////////////////search bar //////////////// -->
   <div id="selectionbox-display-mobile">
     <div class="selectbox selectbox--unselect">
@@ -120,6 +123,8 @@
   ga('send', 'pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
 </body>
 <script src="js/vendor/selectionbox.js"></script>
 
