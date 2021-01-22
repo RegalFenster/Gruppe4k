@@ -38,7 +38,7 @@ app.post("/addCustomer",  async (req,res)=>{
 app.post('/download', (req, res) => {
   console.log('test');
   var doc = new jspdf.jsPDF("p", "mm", "a4");
-  doc.text('hello world', 20, 20);
+  doc.text(document.getElementById("customerTable").value, 20, 20);
   doc.save('PDFs/document.pdf');
 
   res.download('PDFs/document.pdf');
