@@ -1,9 +1,11 @@
 // creates extern connection from webstorm ide
 
 const jspdf = require('jspdf');
-
 const db = require("./js/node/database_communication");
-var db_com = new db.db_com();
+let db_com = new db.db_com();
+let html_to_pdf = require('html-pdf-node');
+var pdf = require('html-pdf');
+var fs = require('fs');
 const express = require('express');
 const app = express();
 app.use(express.urlencoded({extended:true}));
@@ -36,12 +38,15 @@ app.post("/addCustomer",  async (req,res)=>{
 
 // could do it as post also
 app.post('/download', (req, res) => {
-  console.log('test');
-  var doc = new jspdf.jsPDF("p", "mm", "a4");
-  doc.text(document.getElementById("customerTable").value, 20, 20);
-  doc.save('PDFs/document.pdf');
+  var html = fs.readFileSync('./index.html', 'utf8');
+  var options = { format: 'Letter' };
 
-  res.download('PDFs/document.pdf');
+  pdf.create(html, options).toFile('./index.pdf', function(err, res) {
+    if (err) return console.log(err);
+    console.log(res); // { filename: '/app/businesscard.pdf' }
+  });
+
+  res.download('./index.pdf');
 } )
 const port = process.env.PORT || 3000;
 
