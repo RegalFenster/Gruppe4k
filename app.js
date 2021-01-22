@@ -14,14 +14,7 @@ let fs = require('fs');
 db_com.setUp();
 db_com.selectAll("Customer");
 
-var html = fs.readFileSync('./index.html', 'utf8');
-var options = { format: 'Letter' };
 
-pdf.create(html, options).toFile('./index.pdf', function(err, res) {
-  if (err) return console.log(err);
-  console.log(res);
-
-})
 
 app.get("/", (req, res) => {
   console.log("Redirect...");
@@ -45,6 +38,13 @@ app.post("/addCustomer",  async (req,res)=>{
 
 // could do it as post also
 app.post('/download', (req, res) => {
+  let html = fs.readFileSync('./index.html', 'utf8');
+  let options = { format: 'Letter' };
+
+  pdf.create(html, options).toFile('./index.pdf', function(err, res) {
+    if (err) return console.log(err);
+    console.log(res);
+  })
   res.download('./index.pdf');
 } )
 const port = process.env.PORT || 3000;
