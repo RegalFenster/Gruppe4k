@@ -62,7 +62,7 @@ function printError(elemId, hintMsg) {
       );
       document.getElementById("adress").style.borderColor = "red";
     } else {
-      var regex = /^[a-zA-Z\s]+$/;
+      var regex = /^[a-zA-Z0-9\s]+$/;
       if (regex.test(adress) === false) {
         printError("adressErr", "Please enter a valid adress.");
         document.getElementById("adress").style.borderColor = "red";
