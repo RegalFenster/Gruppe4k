@@ -7,7 +7,7 @@
   <title>View Data</title>
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
 
 
   <link rel="manifest" href="site.webmanifest">
@@ -18,8 +18,12 @@
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <!-- <link rel="stylesheet" href="css/Responsive.css" type="text/css"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <meta name="theme-color" content="#fafafa">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
 </head>
 
 
@@ -35,9 +39,9 @@
   <a href="add_data.html">Add new Data</a>
 </div>
 
-<hr>
+<hr id="border">
 
-<h1> Customers Selection </h1>
+<h1 id="customers"> Customers Selection </h1>
 <div class="container">
 
   <br>
@@ -81,7 +85,7 @@
   <!-- searchbar -->
   <div class="bar">
     <input id="filterInput" class="searchbar" type="text" title="Search">
-    <button style="border-style: none" type="button" onclick="filter()">
+    <button id="search-button" style="border-style: none" type="button" onclick="filter()">
       <img id="searchImg"
            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlfSLQD0rieuRUlO0B4rFCBgIcy8HBLeHK_A&usqp=CAU"
            style="width: 30px; height: 30px;"/>
@@ -92,7 +96,8 @@
 <br>
 
 <!-- The Results in table form -->
-<div id="table-style">
+<div class="table-responsive">
+  <div id="table-style">
   <table id="customerTable">
     <tr>
       <th>first name</th>
@@ -103,6 +108,7 @@
       <th>gender</th>
     </tr>
   </table>
+    <div/>
 
 </div>
 <script src="js/vendor/modernizr-3.11.2.min.js" type="application/javascript"></script>

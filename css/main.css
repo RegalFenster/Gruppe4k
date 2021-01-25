@@ -411,10 +411,11 @@ body {
 
       h1{
         font-size: 20px;
-        margin-left: 70px;
+        margin-left: 20px;
       }
       #searchImg{
-        margin-bottom: 20px;
+        margin-bottom: 80px;
+        margin-right :3px
       }
 
       .form-border{
@@ -428,8 +429,32 @@ body {
       .selectbox{
         margin-left: 45px;
       }
-
-
+      #border{
+        border: .8px solid grey;
+    }
+  #selected {
+    width: 350px;
+    height: 50px;
+    margin: 20px 0px 20px -132px;
+}
+  #filterInput{
+    width:300px;
+    margin-left:30px
+  }
+  .bar {
+    width: 250px;
+   display: inline-block;
+  }
+  #search-button{
+    margin: -200px 0px 0px 350px;
+  }
+  
+  #filterInput{
+    margin-left : 32px;
+  }
+  
+  
+  
       }
 
 
