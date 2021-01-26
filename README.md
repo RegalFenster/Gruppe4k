@@ -1,7 +1,7 @@
 # Gruppe4k
 Exercise Agile Project Management
 
-This application is for searching Customers in a Database.
+This application is for searching Customers in a Database
 
 Functional scope: 
 
