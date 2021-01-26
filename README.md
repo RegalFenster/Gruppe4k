@@ -3,7 +3,7 @@ Exercise Agile Project Management
 
 This application is for searching Customers in a Database
 
-# Functional scope: 
+## Functional scope 
 
 Node js application
 
@@ -11,7 +11,7 @@ Database accessing
 
 Input validation
 
-# Hosting:
+# Hosting
 
 https://ubiquitous-understood-archaeopteryx.glitch.me
 
