@@ -11,7 +11,7 @@ Database accessing
 
 Database input
 
-Input validation
+Input validation (Frontend and server side)
 
 PDF generation
 
