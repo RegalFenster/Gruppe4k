@@ -9,7 +9,11 @@ Node js application
 
 Database accessing
 
+Database input
+
 Input validation
+
+PDF generation
 
 ### Hosting
 
