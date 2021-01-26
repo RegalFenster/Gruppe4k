@@ -3,4 +3,9 @@ Exercise Agile Project Management
 
 This application is for searching Customers in a Database.
 
-t
+Functional scope: 
+
+Node js application
+Database accessing
+Input validation
+
